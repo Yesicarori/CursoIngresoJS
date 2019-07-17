@@ -5,8 +5,8 @@ function mostrar()
 	//declarar contadores y variables 
 	
 	var respuesta="si";
-	var sumapositivos;
-	var sumanegativos;
+	var sumapositivos = 0;
+	var sumanegativos = 0;
 	var cantidadpositivos;
 	var cantidadnegativos;
 	var cantidadceros;
@@ -21,9 +21,16 @@ function mostrar()
 		respuesta = prompt ("Desea ingresar otro numero? si / no");
 
 		if(numeroingresado > 0){
-			positivos ++;
+			cantidadpositivos ++;
+			sumapositivos += numeroingresado;
 		} 
-
+		if(numeroingresado < 0){
+			cantidadnegativos ++;
+			sumanegativos += numeroingresado;
+		}
+		if(numeroingresado == 0){
+			cantidadceros ++;
+		}
 
 		
 	

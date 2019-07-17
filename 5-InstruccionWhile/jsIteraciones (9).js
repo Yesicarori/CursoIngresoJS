@@ -1,19 +1,17 @@
 function mostrar()
 {
 
-	var contador=0;
 	var max ;
 	var min ;
-	// declarar variables
-	
-	var respuesta='si';
 
-	while(respuesta!="no")
-	{
+	// declarar variables
+
+
+	do {
 		
 		var numero = parseInt(prompt("Ingresar numero"));
 
-		respuesta = prompt("Desea ingresar otro número? si / no");
+		var respuesta = prompt("Desea ingresar otro número? si / no");
 
 		if (numero > max){
 			max = numero;
@@ -23,7 +21,7 @@ function mostrar()
 		}
 
 		
-	}
+	}	while(respuesta == "si")
 
 	document.getElementById("maximo").value = max;
 	document.getElementById("minimo").value = min;

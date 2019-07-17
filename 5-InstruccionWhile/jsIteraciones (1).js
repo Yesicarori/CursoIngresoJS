@@ -5,7 +5,8 @@ function mostrar()
 
 	while (contador<10){
 	contador++;
-	alert(contador);
+	//alert(contador);
+	console.log(contador);
 
 	}
 
