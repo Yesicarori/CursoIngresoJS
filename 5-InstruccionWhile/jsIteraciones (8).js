@@ -6,6 +6,19 @@ function mostrar()
 	var negativo=1;
 	
 	var respuesta='si';
+while (respuesta == "si"){
+	var numero = parseInt(prompt("Ingrese numero"));
+
+	respuesta = prompt ("Ingresar otro numero? si / no");
+
+	if(numero > 0 )
+	{
+		positivo += numero;
+	}else{
+		negativo *= numero
+	}
+
+}
 
 
 document.getElementById('suma').value=positivo;
