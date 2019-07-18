@@ -3,6 +3,7 @@ function mostrar()
 
 	var max ;
 	var min ;
+	var flag = 0;
 
 	// declarar variables
 
@@ -13,11 +14,12 @@ function mostrar()
 
 		var respuesta = prompt("Desea ingresar otro número? si / no");
 
-		if (numero > max){
+		if (numero > max || flag==0){
 			max = numero;
 		} 
-		if (numero < min){
+		if (numero < min || flag==0){
 			min = numero; 
+			flag = 1;
 		}
 
 		

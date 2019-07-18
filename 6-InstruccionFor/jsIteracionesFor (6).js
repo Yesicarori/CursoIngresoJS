@@ -3,12 +3,12 @@ function mostrar()
 
     var numero = parseInt(prompt("Ingresar numero"));
     var pares= 0;
-    var conteo = 1;
+    var par;
 
-    for( conteo ; conteo <= numero; conteo ++ )
+    for( var conteo = 1; conteo <= numero; conteo ++ )
     {
-       var par = conteo % 2;
-       if (par == 0){
+      // var par = conteo % 2;
+       if (conteo%2== 0){
            pares ++;
        }
     }
