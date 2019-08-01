@@ -5,7 +5,7 @@ var respuesta = "si";
 var temppares = 0;
 var pesomax;
 var pesomin;
-var productos0g;
+var productos0g = 0;
 var contador = 0;
 var sumapesos=0;
 var flag = 0;
@@ -42,7 +42,7 @@ var marcapesada;
     
     //c)
     if (temperatura < 0)
-    { productos0g ++;}
+    { productos0g ++};
 
     //d)
     sumapesos+= peso;
@@ -56,12 +56,12 @@ var marcapesada;
  
 
 
-    }while(respuesta = "si")
-}
-document.write("Cantidad de temperaturas pares: " + temppares + 
+    }while(respuesta == "si")
+    document.write("Cantidad de temperaturas pares: " + temppares + 
 " Marca del producto mas pesado: " + marcapesada + 
 " Cantidad de productos que se conservan a menos de 0 grados: " +productos0g +
 " Promedio del peso de todos los productos: " + promedio + 
-"\n Peso max: " + pesomax + 
+" Peso max: " + pesomax + 
 " Peso min: " + pesomin 
 )
+}
